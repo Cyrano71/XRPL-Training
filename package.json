@@ -1,0 +1,19 @@
+{
+  "name": "xrpl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "ts": "npx tsc -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "xrpl": "^3.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}
