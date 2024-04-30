@@ -4,7 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "compile": "hardhat compile",
+    "deploy-token": "hardhat run --network evmSidechain scripts/deploy-token.ts",
+    "deploy-voting": "hardhat run --network evmSidechain scripts/deploy-voting.ts",
+    "buy": "hardhat run --network evmSidechain scripts/buy.ts",
+    "create-proposal": "hardhat run --network evmSidechain scripts/create-proposal.ts",
+    "vote-proposal": "hardhat run --network evmSidechain scripts/vote-proposal.ts",
+    "send-mainchain": "ts-node ./scripts/send-mainchain.ts",
     "start": "node dist/index.js",
+    "create-dev-wallet": "node dist/src/create_dev_wallet.js",
     "ts": "npx tsc -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,6 +22,13 @@
     "xrpl": "^3.0.0"
   },
   "devDependencies": {
-    "typescript": "^5.4.5"
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^5.0.2",
+    "dotenv": "^16.4.5",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.22.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5",
+    "xchain-sdk": "^1.2.5"
   }
 }
