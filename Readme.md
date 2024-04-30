@@ -35,3 +35,17 @@ hardhat run --network evmSidechain scripts/deploy-token.ts
 XRPLCommonsToken address:  0xC85356E3da0f18da377C317440024cc72b2603ae
 
 use npm install --save-dev ethers@5.7.2 to send to the mainchain
+
+### Flatten
+
+1. npm run flatten to create the Flattened.sol
+
+2. go to the explorer and click on contract => verify 
+
+VerificationMethod = Solidity (Flattened source code)
+Compiler = v0.8.24
+Evm Version = Paris
+Put the content of the Flattened.sol in Contract Code
+Click on Verify & Publish button
+
+![alt text](./assets/verify.PNG)
